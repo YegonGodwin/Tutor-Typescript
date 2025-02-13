@@ -1,0 +1,101 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    margin: 0;
+  }
+  
+  .quiz-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .timer {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background: #007bff;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .question {
+    margin-bottom: 15px;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .feedback {
+    margin-top: 10px;
+    text-align: center;
+    color: #d9534f;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
